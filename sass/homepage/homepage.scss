@@ -156,6 +156,11 @@ $vs-display-font: 'Roboto', sans-serif;
 	color: $vs-blue-3;
 }
 
+.logo__container {
+	display: inline-block;
+	padding: 0;
+}
+
 .logo {
 	background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
 	display: inline-block;

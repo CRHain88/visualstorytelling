@@ -101,6 +101,10 @@
 .navigation__chapter-list {
   color: #4d848d; }
 
+.logo__container {
+  display: inline-block;
+  padding: 0; }
+
 .logo {
   background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
   display: inline-block;
