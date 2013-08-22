@@ -87,6 +87,19 @@
   .navigation .about {
     margin-top: 11px;
     display: block; }
+  .navigation .logo__container {
+    display: inline-block;
+    padding: 0; }
+  .navigation .logo {
+    background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
+    display: inline-block;
+    height: 41px;
+    margin: 20px auto;
+    text-indent: -9999px;
+    width: 143px; }
+    @media only screen and (min-width: 768px) {
+      .navigation .logo {
+        margin: 15px 0; } }
   .navigation a {
     color: #fff;
     line-height: 2.6;
@@ -100,21 +113,6 @@
 
 .navigation__chapter-list {
   color: #4d848d; }
-
-.logo__container {
-  display: inline-block;
-  padding: 0; }
-
-.logo {
-  background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
-  display: inline-block;
-  height: 41px;
-  margin: 20px auto;
-  text-indent: -9999px;
-  width: 143px; }
-  @media only screen and (min-width: 768px) {
-    .logo {
-      margin: 15px 0; } }
 
 .character {
   background: url(../img/assets/character.png) center 0 no-repeat;

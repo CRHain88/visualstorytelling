@@ -134,6 +134,25 @@ $vs-display-font: 'Roboto', sans-serif;
 		display: block;
 	}
 
+	.logo__container {
+		display: inline-block;
+		padding: 0;
+	}
+
+	.logo {
+		background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
+		display: inline-block;
+		height: 41px;
+		margin: 20px auto;
+		text-indent: -9999px;
+		width: 143px;
+
+		@media only screen and (min-width: 768px) {
+			margin: 15px 0;
+		}
+
+	}
+
 	a {
 		color: #fff;
 		line-height: 2.6;
@@ -154,25 +173,6 @@ $vs-display-font: 'Roboto', sans-serif;
 
 .navigation__chapter-list {
 	color: $vs-blue-3;
-}
-
-.logo__container {
-	display: inline-block;
-	padding: 0;
-}
-
-.logo {
-	background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
-	display: inline-block;
-	height: 41px;
-	margin: 20px auto;
-	text-indent: -9999px;
-	width: 143px;
-
-	@media only screen and (min-width: 768px) {
-		margin: 15px 0;
-	}
-
 }
 
 .character {
