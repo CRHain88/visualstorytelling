@@ -1,0 +1,136 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,700,900,100italic");
+.theme-dark, .content-leading, .theme-dark .visual-header, .content-pagebottom {
+  color: #fff; }
+
+.content-leading {
+  background-color: #004f5c;
+  overflow: hidden; }
+  .content-leading:after {
+    background: url(../img/assets/slant.png) 0 0 no-repeat;
+    background-size: 100% 100px;
+    content: '';
+    display: block;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%; }
+  .content-leading p {
+    font-weight: 100;
+    letter-spacing: 1px; }
+  .content-leading .marketing-text {
+    padding-bottom: 380px;
+    position: relative;
+    z-index: 1; }
+    @media only screen and (min-width: 768px) {
+      .content-leading .marketing-text {
+        padding-bottom: 0;
+        padding-top: 100px; } }
+  .content-leading .marketing-text .visual-header {
+    text-align: center; }
+
+.content-body {
+  padding: 60px 0; }
+
+.content-body__chapter-list ul {
+  list-style: none; }
+.content-body__chapter-list li {
+  margin: 0;
+  font-size: 14px; }
+.content-body__chapter-list a {
+  color: #004f5c;
+  display: block;
+  font-weight: 700;
+  padding: 10px 0; }
+  .content-body__chapter-list a:hover, .content-body__chapter-list a:focus, .content-body__chapter-list a:active {
+    color: #4d848d; }
+
+.visual-header {
+  color: #004f5c;
+  font-family: "Roboto", sans-serif;
+  font-size: 41px;
+  font-weight: 100;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase; }
+  @media only screen and (min-width: 768px) {
+    .visual-header {
+      text-align: left; } }
+  .theme-dark .visual-header, .content-leading .visual-header, .content-pagebottom .visual-header {
+    text-shadow: 0 3px 0 #00222c; }
+
+.visual-header--heavy {
+  font-weight: 700; }
+
+.visual-header--subhead {
+  font-size: 20px;
+  font-style: italic;
+  padding: 0 30px 30px;
+  text-transform: none; }
+  .theme-dark .visual-header--subhead, .content-leading .visual-header--subhead, .content-pagebottom .visual-header--subhead {
+    text-shadow: none; }
+
+.navigation {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  z-index: 100; }
+  .navigation .inline-list {
+    display: inline-block;
+    margin: 0 auto; }
+  .navigation .inline-list dt {
+    margin: 0; }
+  .navigation .inline-list dd {
+    margin: 0;
+    display: inline-block; }
+  .navigation .about {
+    margin-top: 11px;
+    display: block; }
+  .navigation a {
+    color: #fff;
+    line-height: 2.6;
+    padding: 15px 30px;
+    text-shadow: 0 3px 0 #00222c; }
+    @media only screen and (min-width: 768px) {
+      .navigation a {
+        padding: 15px; } }
+    .navigation a:hover, .navigation a:focus, .navigation a:active {
+      color: #ffc349; }
+
+.navigation__chapter-list {
+  color: #4d848d; }
+
+.logo {
+  background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
+  display: inline-block;
+  height: 41px;
+  margin: 20px auto;
+  text-indent: -9999px;
+  width: 143px; }
+  @media only screen and (min-width: 768px) {
+    .logo {
+      margin: 15px 0; } }
+
+.character {
+  background: url(../img/assets/character.png) center 0 no-repeat;
+  background-size: 800px;
+  bottom: -70px;
+  height: 540px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .character {
+      background-position: 0 0;
+      background-size: auto;
+      bottom: inherit;
+      height: 1083px;
+      left: -300px;
+      top: -100px;
+      width: 1020px; } }
+
+.content-pagebottom {
+  background: url(../img/assets/halftone-gradient.png) 0 0 repeat-x;
+  background-color: #00222c;
+  padding: 60px 0; }
