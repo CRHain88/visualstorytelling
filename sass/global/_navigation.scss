@@ -1,0 +1,80 @@
+.navigation {
+	font-family: $vs-display-font;
+	font-weight: 500;
+	height: 100px;
+	position: relative;
+	text-align: center;
+	z-index: 100;
+
+	.inline-list {
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.inline-list dt {
+		margin: 0;
+	}
+	.inline-list dd {
+		margin: 0;
+		display: inline-block;
+	}
+
+	.about {
+		margin-top: 11px;
+		display: block;
+	}
+
+	.logo__container {
+		display: inline-block;
+		padding: 0;
+	}
+
+	.logo {
+		background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
+		display: inline-block;
+		height: 41px;
+		margin: 20px auto;
+		text-indent: -9999px;
+		width: 143px;
+
+		@media only screen and (min-width: 768px) {
+			margin: 15px 0;
+		}
+
+	}
+
+	a {
+		color: #fff;
+		line-height: 2.6;
+		padding: 15px 30px;
+		text-shadow: 0 3px 0 #00222c;
+
+		@media only screen and (min-width: 768px) {
+			padding: 15px;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $vs-yellow-1;
+		}
+	}
+}
+
+.navigation__wide {
+	background-color: $vs-blue-1;
+	height: auto;
+
+	@media only screen and (min-width: 768px) {
+		overflow: hidden;
+		&:after {
+			background: url(../img/assets/slant.png) 0 0 no-repeat;
+			background-size: 100% 100px;
+			content: '';
+			display: block;
+			height: 100px;
+			margin: 0 auto;
+			position: relative;
+			width: 100%;
+		}
+	}
+}

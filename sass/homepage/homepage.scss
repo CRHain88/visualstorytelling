@@ -1,20 +1,6 @@
-@import url("http://fonts.googleapis.com/css?family=Roboto:100,700,900,100italic");
-
-$vs-blue-1: #004f5c;
-$vs-blue-2: #00222c;
-$vs-blue-3: #4D848D;
-$vs-yellow-1: #FFC349;
-
-$vs-display-font: 'Roboto', sans-serif;
-
-.theme-dark {
-	color: #fff;
-}
+@import "../global/global";
 
 .content-leading {
-	@extend .theme-dark;
-
-	background-color: $vs-blue-1;
 	overflow: hidden;
 
 	&:after {
@@ -28,23 +14,22 @@ $vs-display-font: 'Roboto', sans-serif;
 		width: 100%;
 	}
 
-	p {
-		font-weight: 100;
-		letter-spacing: 1px;
-	}
-
 	.marketing-text {
 		padding-bottom: 380px;
 		position: relative;
 		z-index: 1;
 		@media only screen and (min-width: 768px) {
 			padding-bottom: 0;
-			padding-top: 100px;
+			padding-top: 80px;
 		}
-	}
 
-	.marketing-text .visual-header {
-		text-align: center;
+		.visual-header {
+			text-align: center;
+		}
+
+		.visual-header--subhead {
+			margin-top: 20px;
+		}
 	}
 }
 
@@ -75,102 +60,6 @@ $vs-display-font: 'Roboto', sans-serif;
 	}
 }
 
-.visual-header {
-	color: $vs-blue-1;
-	font-family: $vs-display-font;
-	font-size: 41px;
-	font-weight: 100;
-	line-height: 1;
-	text-align: center;
-	text-transform: uppercase;
-
-	@media only screen and (min-width: 768px) {
-		text-align: left;
-	}
-
-	.theme-dark & {
-		@extend .theme-dark;
-		text-shadow: 0 3px 0 $vs-blue-2;
-	}
-}
-
-.visual-header--heavy {
-	font-weight: 700;
-}
-
-.visual-header--subhead {
-	font-size: 20px;
-	font-style: italic;
-	padding: 0 30px 30px;
-	text-transform: none;
-
-	.theme-dark & {
-		text-shadow: none;
-	}
-}
-
-.navigation {
-	font-family: $vs-display-font;
-	font-weight: 500;
-	height: 100px;
-	position: relative;
-	text-align: center;
-	z-index: 100;
-
-	.inline-list {
-		display: inline-block;
-		margin: 0 auto;
-	}
-	.inline-list dt {
-		margin: 0;
-	}
-	.inline-list dd {
-		margin: 0;
-		display: inline-block;
-	}
-
-	.about {
-		margin-top: 11px;
-		display: block;
-	}
-
-	.logo__container {
-		display: inline-block;
-		padding: 0;
-	}
-
-	.logo {
-		background: url(../img/assets/visual-storytelling-logo.png) 0 0 no-repeat;
-		display: inline-block;
-		height: 41px;
-		margin: 20px auto;
-		text-indent: -9999px;
-		width: 143px;
-
-		@media only screen and (min-width: 768px) {
-			margin: 15px 0;
-		}
-
-	}
-
-	a {
-		color: #fff;
-		line-height: 2.6;
-		padding: 15px 30px;
-		text-shadow: 0 3px 0 #00222c;
-
-		@media only screen and (min-width: 768px) {
-			padding: 15px;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: $vs-yellow-1;
-		}
-	}
-}
-
 .navigation__chapter-list {
 	color: $vs-blue-3;
 }
@@ -196,8 +85,8 @@ $vs-display-font: 'Roboto', sans-serif;
 }
 
 .content-pagebottom {
-	@extend .theme-dark;
-	background: url(../img/assets/halftone-gradient.png) 0 0 repeat-x;
-	background-color: $vs-blue-2;
+	background-image: url(../img/assets/halftone-gradient.png);
+	background-position: 0 0;
+	background-repeat: repeat-x;
 	padding: 60px 0;
 }

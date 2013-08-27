@@ -1,0 +1,122 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:100,700,900,100italic");
+
+@import "variables";
+@import "navigation"; 
+
+.theme-dark {
+	color: #fff;
+
+	p,
+	cite {
+		font-weight: 100;
+		letter-spacing: 1px;
+		line-height: 1.8;
+	}
+}
+
+.theme-dark--seafoam {
+	background-color: $vs-blue-1;
+}
+
+.theme-dark--blueoil {
+	background-color: $vs-blue-2;
+}
+
+.content-body {
+	padding: 60px 0;
+}
+
+.visual-header {
+	color: $vs-blue-1;
+	font-family: $vs-display-font;
+	font-weight: 100;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+
+	@media only screen and (min-width: 768px) {
+		text-align: left;
+	}
+
+	.theme-dark & {
+		@extend .theme-dark;
+		text-shadow: 0 3px 0 $vs-blue-2;
+	}
+}
+
+h1.visual-header {
+	font-size: 41px;
+}
+
+h2.visual-header {
+	font-size: 20px;
+}
+
+hgroup {
+	margin: 1em 0;
+	h1,
+	h2 {
+		margin: 0;
+	}
+}
+
+blockquote {
+	&,
+	p {
+		color: $vs-blue-1;
+		font-family: $vs-display-font;
+		font-size: 30px;
+		text-align: center;
+		line-height: 1.2;
+	}
+
+	cite {
+		font-family: $vs-standard-font;
+		font-size: 16px;
+		font-style: normal;
+		text-align: right;
+	}
+
+	.theme-dark & {
+		&,
+		p {
+			color: #fff;
+		}
+	}
+
+}
+
+figure {
+	margin: 20px 0;
+}
+
+figcaption {
+	&,
+	p,
+	blockquote,
+	blockquote p,
+	blockquote cite {
+		font-size: 14px;
+		line-height: 1.4;
+		font-family: $vs-standard-font;
+		color: #000;
+	}
+}
+
+.visual-header--heavy {
+	font-weight: 700;
+}
+
+.visual-header--subhead {
+	font-style: italic;
+	padding: 0 30px 30px;
+	text-transform: none;
+
+	.theme-dark & {
+		text-shadow: none;
+	}
+}
+
+.navigation__chapter-list {
+	color: $vs-blue-3;
+}

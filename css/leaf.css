@@ -143,69 +143,14 @@ figcaption blockquote cite {
 .navigation__chapter-list {
   color: #4d848d; }
 
-.content-leading {
-  overflow: hidden; }
-  .content-leading:after {
-    background: url(../img/assets/slant.png) 0 0 no-repeat;
-    background-size: 100% 100px;
-    content: '';
-    display: block;
-    height: 100px;
-    margin: 0 auto;
-    position: relative;
-    width: 100%; }
-  .content-leading .marketing-text {
-    padding-bottom: 380px;
-    position: relative;
-    z-index: 1; }
-    @media only screen and (min-width: 768px) {
-      .content-leading .marketing-text {
-        padding-bottom: 0;
-        padding-top: 80px; } }
-    .content-leading .marketing-text .visual-header {
-      text-align: center; }
-    .content-leading .marketing-text .visual-header--subhead {
-      margin-top: 20px; }
-
-.content-body {
+.bios {
+  background-image: url(../img/assets/halftone-gradient.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
   padding: 60px 0; }
 
-.content-body__chapter-list ul {
-  list-style: none; }
-.content-body__chapter-list li {
-  margin: 0;
-  font-size: 14px; }
-.content-body__chapter-list a {
-  color: #004f5c;
-  display: block;
-  font-weight: 700;
-  padding: 10px 0; }
-  .content-body__chapter-list a:hover, .content-body__chapter-list a:focus, .content-body__chapter-list a:active {
-    color: #4d848d; }
-
-.navigation__chapter-list {
-  color: #4d848d; }
-
-.character {
-  background: url(../img/assets/character.png) center 0 no-repeat;
-  background-size: 800px;
-  bottom: -70px;
-  height: 540px;
-  left: 0;
-  position: absolute;
-  width: 100%; }
-  @media only screen and (min-width: 768px) {
-    .character {
-      background-position: 0 0;
-      background-size: auto;
-      bottom: inherit;
-      height: 1083px;
-      left: -300px;
-      top: -100px;
-      width: 1020px; } }
-
-.content-pagebottom {
-  background-image: url(../img/assets/halftone-gradient.png);
+.bonus-content {
+  background-image: url(../img/assets/halftone-gradient-seafoam.png);
   background-position: 0 0;
   background-repeat: repeat-x;
   padding: 60px 0; }
