@@ -100,13 +100,39 @@ hgroup {
   hgroup h2 {
     margin: 0; }
 
+.chapter-quote,
+.chapter-quote p {
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center; }
+
+.pull-quote {
+  margin: 0 40px 20px;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .pull-quote,
+    .pull-quote p {
+      font-size: 20px;
+      margin-right: 0;
+      text-align: left; } }
+
+ul,
+ol {
+  margin-left: 50px; }
+  .theme-dark ul, .theme-dark .visual-header ul, .theme-dark
+  ol, .theme-dark .visual-header
+  ol {
+    font-weight: 100;
+    letter-spacing: 1px; }
+
+figure img {
+  margin: auto;
+  display: block; }
+
 blockquote,
 blockquote p {
   color: #004f5c;
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  text-align: center;
-  line-height: 1.2; }
+  font-family: "Roboto", sans-serif; }
 blockquote cite {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 16px;

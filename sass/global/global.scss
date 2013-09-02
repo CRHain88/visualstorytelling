@@ -60,14 +60,49 @@ hgroup {
     }
 }
 
+.chapter-quote {
+    &,
+    p {
+        font-size: 30px;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
+.pull-quote {
+    margin: 0 40px 20px;
+    text-align: center;
+
+    &,
+    p {
+        @media only screen and (min-width: 768px) {
+            font-size: 20px;
+            margin-right: 0;
+            text-align: left;
+        }
+    }
+}
+
+ul,
+ol {
+    margin-left: 50px;
+
+    .theme-dark & {
+        font-weight: 100;
+        letter-spacing: 1px;
+    }
+}
+
+figure img {
+    margin: auto;
+    display: block;
+}
+
 blockquote {
     &,
     p {
         color: $vs-blue-1;
         font-family: $vs-display-font;
-        font-size: 30px;
-        text-align: center;
-        line-height: 1.2;
     }
 
     cite {
