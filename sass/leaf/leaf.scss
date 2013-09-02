@@ -7,14 +7,21 @@
     padding: 60px 0;
 }
 
-.bio-tout,
+.bio__tout,
 .chapter-quote,
-.bonus-content-tout {
+.bonus-content__tout {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
     @media only screen and (min-width: 768px) {
         border-bottom: none;
+    }
+}
+
+.bio {
+    margin-bottom: 40px;
+    hgroup {
+        margin-top: 0;
     }
 }
 

@@ -155,3 +155,11 @@ figcaption {
 .navigation__chapter-list {
     color: $vs-blue-3;
 }
+
+.bio__image-mask {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 75px;
+    overflow: hidden;
+}

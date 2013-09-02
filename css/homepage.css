@@ -169,6 +169,13 @@ figcaption blockquote cite {
 .navigation__chapter-list {
   color: #4d848d; }
 
+.bio__image-mask {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 75px;
+  overflow: hidden; }
+
 .content-leading {
   overflow: hidden; }
   .content-leading:after {
