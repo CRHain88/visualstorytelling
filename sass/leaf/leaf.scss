@@ -1,15 +1,47 @@
 @import "../global/global";
 
 .bios {
-	background-image: url(../img/assets/halftone-gradient.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	padding: 60px 0;
+    background-image: url(../img/assets/halftone-gradient.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    padding: 60px 0;
+}
+
+.bio-tout,
+.chapter-quote,
+.bonus-content-tout {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    @media only screen and (min-width: 768px) {
+        border-bottom: none;
+    }
+}
+
+.chapter-header {
+    margin-bottom: 80px;
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.chapter-quote {
+    margin: 0 15px 20px;
+    &,
+    p {
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
 }
 
 .bonus-content {
-	background-image: url(../img/assets/halftone-gradient-seafoam.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	padding: 60px 0;
+    background-image: url(../img/assets/halftone-gradient-seafoam.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    padding: 60px 0;
+}
+
+.read-more {
+    float: right;
+    clear: both;
 }

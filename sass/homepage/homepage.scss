@@ -1,92 +1,92 @@
 @import "../global/global";
 
 .content-leading {
-	overflow: hidden;
+    overflow: hidden;
 
-	&:after {
-		background: url(../img/assets/slant.png) 0 0 no-repeat;
-		background-size: 100% 100px;
-		content: '';
-		display: block;
-		height: 100px;
-		margin: 0 auto;
-		position: relative;
-		width: 100%;
-	}
+    &:after {
+        background: url(../img/assets/slant.png) 0 0 no-repeat;
+        background-size: 100% 100px;
+        content: '';
+        display: block;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
 
-	.marketing-text {
-		padding-bottom: 380px;
-		position: relative;
-		z-index: 1;
-		@media only screen and (min-width: 768px) {
-			padding-bottom: 0;
-			padding-top: 80px;
-		}
+    .marketing-text {
+        padding-bottom: 380px;
+        position: relative;
+        z-index: 1;
+        @media only screen and (min-width: 768px) {
+            padding-bottom: 0;
+            padding-top: 80px;
+        }
 
-		.visual-header {
-			text-align: center;
-		}
+        .visual-header {
+            text-align: center;
+        }
 
-		.visual-header--subhead {
-			margin-top: 20px;
-		}
-	}
+        .visual-header--subhead {
+            margin-top: 20px;
+        }
+    }
 }
 
 .content-body {
-	padding: 60px 0;
+    padding: 60px 0;
 }
 
 .content-body__chapter-list {
-	ul {
-		list-style: none;
-	}
+    ul {
+        list-style: none;
+    }
 
-	li {
-		margin: 0;
-		font-size: 14px;
-	}
+    li {
+        margin: 0;
+        font-size: 14px;
+    }
 
-	a {
-		color: $vs-blue-1;
-		display: block;
-		font-weight: 700;
-		padding: 10px 0;
-		&:hover,
-		&:focus,
-		&:active {
-			color: $vs-blue-3;
-		}
-	}
+    a {
+        color: $vs-blue-1;
+        display: block;
+        font-weight: 700;
+        padding: 10px 0;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $vs-blue-3;
+        }
+    }
 }
 
 .navigation__chapter-list {
-	color: $vs-blue-3;
+    color: $vs-blue-3;
 }
 
 .character {
-	background: url(../img/assets/character.png) center 0 no-repeat;
-	background-size: 800px;
-	bottom: -70px;
-	height: 540px;
-	left: 0;
-	position: absolute;
-	width: 100%;
+    background: url(../img/assets/character.png) center 0 no-repeat;
+    background-size: 800px;
+    bottom: -70px;
+    height: 540px;
+    left: 0;
+    position: absolute;
+    width: 100%;
 
-	@media only screen and (min-width: 768px) {
-		background-position: 0 0;
-		background-size: auto;
-		bottom: inherit;
-		height: 1083px;
-		left: -300px;
-		top: -100px;
-		width: 1020px;
-	}
+    @media only screen and (min-width: 768px) {
+        background-position: 0 0;
+        background-size: auto;
+        bottom: inherit;
+        height: 1083px;
+        left: -300px;
+        top: -100px;
+        width: 1020px;
+    }
 }
 
 .content-pagebottom {
-	background-image: url(../img/assets/halftone-gradient.png);
-	background-position: 0 0;
-	background-repeat: repeat-x;
-	padding: 60px 0;
+    background-image: url(../img/assets/halftone-gradient.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    padding: 60px 0;
 }
