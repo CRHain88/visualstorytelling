@@ -188,3 +188,45 @@ figcaption {
         margin-bottom: 20px;
     }
 }
+
+.footer__next-prev {
+    font-family: $vs-display-font;
+    color: $vs-blue-3;
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        color: inherit;
+        display: inline-block;
+        padding: 10px 0;
+    }
+}
+
+.footer__home {
+    text-align: center;
+}
+
+.footer__next {
+    text-align: right;
+    a {
+        background-color: $vs-blue-3;
+        color: #fff;
+        letter-spacing: 1px;
+        font-weight: 100;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    a:after {
+        content: '\00BB';
+        margin-left: 10px;
+    }
+}
+
+.footer__prev {
+    a:before {
+        content: '\00AB';
+        margin-right: 10px;
+    }
+}

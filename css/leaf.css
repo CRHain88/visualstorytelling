@@ -202,6 +202,36 @@ figcaption blockquote cite {
   height: 190px;
   margin-bottom: 20px; }
 
+.footer__next-prev {
+  font-family: "Roboto", sans-serif;
+  color: #4d848d; }
+  .footer__next-prev li {
+    margin: 0; }
+  .footer__next-prev a {
+    color: inherit;
+    display: inline-block;
+    padding: 10px 0; }
+
+.footer__home {
+  text-align: center; }
+
+.footer__next {
+  text-align: right; }
+  .footer__next a {
+    background-color: #4d848d;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 100;
+    border-radius: 10px;
+    padding: 10px 20px; }
+  .footer__next a:after {
+    content: '\00BB';
+    margin-left: 10px; }
+
+.footer__prev a:before {
+  content: '\00AB';
+  margin-right: 10px; }
+
 .bios {
   background-image: url(../img/assets/halftone-gradient.png);
   background-position: 0 0;
