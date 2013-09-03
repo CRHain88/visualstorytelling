@@ -48,7 +48,8 @@ h1.visual-header {
     font-size: 41px;
 }
 
-h2.visual-header {
+h2.visual-header,
+.visual-header--tiny {
     font-size: 20px;
 }
 
@@ -135,11 +136,18 @@ figcaption {
         line-height: 1.4;
         font-family: $vs-standard-font;
         color: #000;
+        .theme-dark & {
+            color: #fff;
+        }
     }
 }
 
 .visual-header--heavy {
     font-weight: 700;
+}
+
+.visual-header--tiny {
+    display: block;
 }
 
 .visual-header--subhead {
@@ -162,4 +170,21 @@ figcaption {
     margin: 0 auto;
     border-radius: 75px;
     overflow: hidden;
+}
+
+.content-pagebottom {
+    background-image: url(../img/assets/halftone-gradient.png);
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    padding: 60px 0;
+}
+
+.booklist {
+    li {
+        width: 140px;
+    }
+    img {
+        height: 190px;
+        margin-bottom: 20px;
+    }
 }

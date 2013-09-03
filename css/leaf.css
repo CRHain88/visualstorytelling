@@ -91,7 +91,8 @@
 h1.visual-header {
   font-size: 41px; }
 
-h2.visual-header {
+h2.visual-header,
+.visual-header--tiny {
   font-size: 20px; }
 
 hgroup {
@@ -155,9 +156,22 @@ figcaption blockquote cite {
   line-height: 1.4;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   color: #000; }
+  .theme-dark figcaption, .theme-dark .visual-header figcaption, .theme-dark
+  figcaption p, .theme-dark .visual-header
+  figcaption p, .theme-dark
+  figcaption blockquote, .theme-dark .visual-header
+  figcaption blockquote, .theme-dark
+  figcaption blockquote p, .theme-dark .visual-header
+  figcaption blockquote p, .theme-dark
+  figcaption blockquote cite, .theme-dark .visual-header
+  figcaption blockquote cite {
+    color: #fff; }
 
 .visual-header--heavy {
   font-weight: 700; }
+
+.visual-header--tiny {
+  display: block; }
 
 .visual-header--subhead {
   font-style: italic;
@@ -175,6 +189,18 @@ figcaption blockquote cite {
   margin: 0 auto;
   border-radius: 75px;
   overflow: hidden; }
+
+.content-pagebottom {
+  background-image: url(../img/assets/halftone-gradient.png);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  padding: 60px 0; }
+
+.booklist li {
+  width: 140px; }
+.booklist img {
+  height: 190px;
+  margin-bottom: 20px; }
 
 .bios {
   background-image: url(../img/assets/halftone-gradient.png);
