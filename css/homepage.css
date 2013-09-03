@@ -40,6 +40,8 @@
         padding: 15px; } }
     .navigation a:hover, .navigation a:focus, .navigation a:active {
       color: #ffc349; }
+  .navigation .active {
+    color: #ffc349; }
 
 .navigation__wide {
   background-color: #004f5c;
@@ -179,6 +181,9 @@ figcaption blockquote cite {
   text-transform: none; }
   .theme-dark .visual-header--subhead {
     text-shadow: none; }
+
+.active {
+  color: #ffc349; }
 
 .navigation__chapter-list {
   color: #4d848d; }
