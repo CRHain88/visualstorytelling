@@ -201,6 +201,9 @@ figcaption {
         color: inherit;
         display: inline-block;
         padding: 10px 0;
+        &:hover {
+            color: $vs-yellow-1;
+        }
     }
 }
 
@@ -217,6 +220,10 @@ figcaption {
         font-weight: 100;
         border-radius: 10px;
         padding: 10px 20px;
+        &:hover {
+            color: #fff;
+            background-color: $vs-yellow-1;
+        }
     }
     a:after {
         content: '\00BB';
