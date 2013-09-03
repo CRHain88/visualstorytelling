@@ -1,0 +1,38 @@
+# ----------------------------------------------------------------------
+# 301 Redirects
+# ----------------------------------------------------------------------
+
+redirect 301 /chapter1.html http://www.visualstorytelling.com/chapter/words-and-pictures/index.html
+redirect 301 /chapter2.html http://www.visualstorytelling.com/chapter/set-to-set/index.html
+redirect 301 /chapter3.html http://www.visualstorytelling.com/chapter/panel-to-panel/index.html
+redirect 301 /chapter4.html http://www.visualstorytelling.com/chapter/scene-to-scene/index.html
+redirect 301 /chapter5.html http://www.visualstorytelling.com/chapter/level-to-level/index.html
+redirect 301 /chapter6.html http://www.visualstorytelling.com/chapter/the-drawing-board/index.html
+redirect 301 /chapter7.html http://www.visualstorytelling.com/chapter/the-camera-in-the-minds-eye/index.html
+redirect 301 /chapter8.html http://www.visualstorytelling.com/chapter/mood-and-lighting/index.html
+redirect 301 /chapter9.html http://www.visualstorytelling.com/chapter/timing-and-pace/index.html
+redirect 301 /chapter10.html http://www.visualstorytelling.com/chapter/visual-design-rules/index.html
+redirect 301 /chapter11.html http://www.visualstorytelling.com/chapter/visual-art/index.html
+redirect 301 /chapter12.html http://www.visualstorytelling.com/chapter/working-with-a-script/index.html
+
+# PDFs
+# -----------------------------------------------------------------------
+redirect 301 images/Chapter%203/COMICS.pdf http://www.visualstorytelling.com/img/downloads/COMICS.pdf
+redirect 301 images/Chapter%204/ANIMATION1.pdf?codekitCB=399928064.070879 http://www.visualstorytelling.com/img/downloads/ANIMATION1.pdf
+redirect 301 images/Chapter%206/Andrew_Loomis.pdf http://www.visualstorytelling.com/img/downloads/Andrew_Loomis.pdf
+redirect 301 images/Chapter%205/figure5.30-GAMES6.pdf http://www.visualstorytelling.com/img/downloads/figure5.30-GAMES6.pdf
+
+# Convenience Methods
+# -----------------------------------------------------------------------
+redirect 301 /chapter1 http://www.visualstorytelling.com/chapter/words-and-pictures/index.html
+redirect 301 /chapter2 http://www.visualstorytelling.com/chapter/set-to-set/index.html
+redirect 301 /chapter3 http://www.visualstorytelling.com/chapter/panel-to-panel/index.html
+redirect 301 /chapter4 http://www.visualstorytelling.com/chapter/scene-to-scene/index.html
+redirect 301 /chapter5 http://www.visualstorytelling.com/chapter/level-to-level/index.html
+redirect 301 /chapter6 http://www.visualstorytelling.com/chapter/the-drawing-board/index.html
+redirect 301 /chapter7 http://www.visualstorytelling.com/chapter/the-camera-in-the-minds-eye/index.html
+redirect 301 /chapter8 http://www.visualstorytelling.com/chapter/mood-and-lighting/index.html
+redirect 301 /chapter9 http://www.visualstorytelling.com/chapter/timing-and-pace/index.html
+redirect 301 /chapter10 http://www.visualstorytelling.com/chapter/visual-design-rules/index.html
+redirect 301 /chapter11 http://www.visualstorytelling.com/chapter/visual-art/index.html
+redirect 301 /chapter12 http://www.visualstorytelling.com/chapter/working-with-a-script/index.html
