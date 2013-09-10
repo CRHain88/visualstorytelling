@@ -1,7 +1,6 @@
 .navigation {
     font-family: $vs-display-font;
     font-weight: 500;
-    height: 100px;
     position: relative;
     text-align: center;
     z-index: 100;
@@ -65,10 +64,12 @@
 }
 
 .navigation__wide {
-    background-color: $vs-blue-1;
-    height: auto;
+    display: none;
 
     @media only screen and (min-width: 768px) {
+        background-color: $vs-blue-1;
+        display: block;
+        height: auto;
         overflow: hidden;
         &:after {
             background: url(../img/assets/slant.png) 0 0 no-repeat;
@@ -81,4 +82,147 @@
             width: 100%;
         }
     }
+}
+
+.navigation.navigation__peak-a-boo.stuck {
+    top: 0;
+}
+
+.navigation.navigation__peak-a-boo {
+    position: fixed;
+    background-color: $vs-blue-1;
+    width: 100%;
+    margin: 0 auto;
+    top: -100px;
+    text-align: center;
+    z-index: 100;
+    border-bottom: 5px solid $vs-blue-2;
+    -webkit-transition: top 0.5s ease-in-out;
+       -moz-transition: top 0.5s ease-in-out;
+            transition: top 0.5s ease-in-out;
+    .navigation__dropdown {
+        width: 100%;
+    }
+
+    .navigation__dropdown__items a {
+        text-shadow: none;
+    }
+
+    .active {
+        color: $vs-blue-2;
+    }
+
+    .about {
+        padding-bottom: 5px;
+        &.active {
+            color: $vs-yellow-1;
+        }
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    .logo__back-to-top {
+        display: block;
+        text-align: left;
+        line-height: 1;
+        margin: 15px 0 0;
+        &:before {
+            background: url('../img/assets/arrows.png') -20px -40px no-repeat;
+            content: '';
+            display: inline-block;
+            height: 20px;
+            left: 0px;
+            position: relative;
+            top: 10px;
+            width: 20px;
+        }
+        &:hover:before {
+            background-position: -20px -20px;
+        }
+    }
+}
+
+.click-nav {
+    margin: 15px auto 0;
+    width: 100%;
+    ul {
+        margin:  0;
+        padding:  0;
+        position: relative;
+        width:  100%;
+        .clicker {
+            background: $vs-blue-1;
+            color: #fff;
+            position: relative;
+            width:  100%;
+            &:after {
+                background: url('../img/assets/arrows.png') 0 -40px no-repeat;
+                content: '';
+                display: inline-block;
+                height: 20px;
+                left: 20px;
+                position: relative;
+                top: 10px;
+                width: 20px;
+            }
+            &:hover:after {
+                background-position: 0 0;
+            }
+        }
+        .navigation__dropdown .clicker.active,
+        .navigation__dropdown:hover .clicker {
+            border: 1px solid $vs-blue-1;
+            border-bottom: none;
+            border-top: none;
+            color: $vs-blue-2;
+        }
+        .navigation__dropdown:hover .clicker,
+        .active {
+            background: $vs-yellow-1;
+            text-shadow: none;
+            color: $vs-blue-2;
+        }
+        .navigation__dropdown .clicker.active:after,
+        .navigation__dropdown:hover .clicker:after {
+            background-position: 0 0;
+        }
+    }
+    ul li {
+        cursor: pointer;
+        display:  inline-block;
+        list-style: none;
+        position: relative;
+        width:  50%;
+        a {
+            -webkit-transition: background-color 0.2s ease-in-out;
+               -moz-transition: background-color 0.2s ease-in-out;
+                    transition: background-color 0.2s ease-in-out;
+            background: #fff;
+            color: #333;
+            display: block;
+            padding: 8px 10px;
+            text-decoration: none;
+            &:hover {
+                background: #f2f2f2;
+            }
+            &.active:hover {
+                background: $vs-yellow-1;
+            }
+        }
+    }
+    ul li ul {
+        left: 0;
+        position: absolute;
+        right: 0;
+        border: 1px solid $vs-blue-2;
+    }
+}
+
+.click-nav .no-js ul {
+    display: none;
+}
+.click-nav .no-js:hover ul {
+    display: block;
 }

@@ -2,7 +2,6 @@
 .navigation {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  height: 100px;
   position: relative;
   text-align: center;
   z-index: 100; }
@@ -44,10 +43,12 @@
     color: #ffc349; }
 
 .navigation__wide {
-  background-color: #004f5c;
-  height: auto; }
+  display: none; }
   @media only screen and (min-width: 768px) {
     .navigation__wide {
+      background-color: #004f5c;
+      display: block;
+      height: auto;
       overflow: hidden; }
       .navigation__wide:after {
         background: url(../img/assets/slant.png) 0 0 no-repeat;
@@ -58,6 +59,119 @@
         margin: 0 auto;
         position: relative;
         width: 100%; } }
+
+.navigation.navigation__peak-a-boo.stuck {
+  top: 0; }
+
+.navigation.navigation__peak-a-boo {
+  position: fixed;
+  background-color: #004f5c;
+  width: 100%;
+  margin: 0 auto;
+  top: -100px;
+  text-align: center;
+  z-index: 100;
+  border-bottom: 5px solid #00222c;
+  -webkit-transition: top 0.5s ease-in-out;
+  -moz-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out; }
+  .navigation.navigation__peak-a-boo .navigation__dropdown {
+    width: 100%; }
+  .navigation.navigation__peak-a-boo .navigation__dropdown__items a {
+    text-shadow: none; }
+  .navigation.navigation__peak-a-boo .active {
+    color: #00222c; }
+  .navigation.navigation__peak-a-boo .about {
+    padding-bottom: 5px; }
+    .navigation.navigation__peak-a-boo .about.active {
+      color: #ffc349; }
+  .navigation.navigation__peak-a-boo .logo {
+    margin-bottom: 0; }
+  .navigation.navigation__peak-a-boo .logo__back-to-top {
+    display: block;
+    text-align: left;
+    line-height: 1;
+    margin: 15px 0 0; }
+    .navigation.navigation__peak-a-boo .logo__back-to-top:before {
+      background: url("../img/assets/arrows.png") -20px -40px no-repeat;
+      content: '';
+      display: inline-block;
+      height: 20px;
+      left: 0px;
+      position: relative;
+      top: 10px;
+      width: 20px; }
+    .navigation.navigation__peak-a-boo .logo__back-to-top:hover:before {
+      background-position: -20px -20px; }
+
+.click-nav {
+  margin: 15px auto 0;
+  width: 100%; }
+  .click-nav ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%; }
+    .click-nav ul .clicker {
+      background: #004f5c;
+      color: #fff;
+      position: relative;
+      width: 100%; }
+      .click-nav ul .clicker:after {
+        background: url("../img/assets/arrows.png") 0 -40px no-repeat;
+        content: '';
+        display: inline-block;
+        height: 20px;
+        left: 20px;
+        position: relative;
+        top: 10px;
+        width: 20px; }
+      .click-nav ul .clicker:hover:after {
+        background-position: 0 0; }
+    .click-nav ul .navigation__dropdown .clicker.active,
+    .click-nav ul .navigation__dropdown:hover .clicker {
+      border: 1px solid #004f5c;
+      border-bottom: none;
+      border-top: none;
+      color: #00222c; }
+    .click-nav ul .navigation__dropdown:hover .clicker,
+    .click-nav ul .active {
+      background: #ffc349;
+      text-shadow: none;
+      color: #00222c; }
+    .click-nav ul .navigation__dropdown .clicker.active:after,
+    .click-nav ul .navigation__dropdown:hover .clicker:after {
+      background-position: 0 0; }
+  .click-nav ul li {
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    width: 50%; }
+    .click-nav ul li a {
+      -webkit-transition: background-color 0.2s ease-in-out;
+      -moz-transition: background-color 0.2s ease-in-out;
+      transition: background-color 0.2s ease-in-out;
+      background: #fff;
+      color: #333;
+      display: block;
+      padding: 8px 10px;
+      text-decoration: none; }
+      .click-nav ul li a:hover {
+        background: #f2f2f2; }
+      .click-nav ul li a.active:hover {
+        background: #ffc349; }
+  .click-nav ul li ul {
+    left: 0;
+    position: absolute;
+    right: 0;
+    border: 1px solid #00222c; }
+
+.click-nav .no-js ul {
+  display: none; }
+
+.click-nav .no-js:hover ul {
+  display: block; }
 
 .theme-dark, .theme-dark .visual-header {
   color: #fff; }
