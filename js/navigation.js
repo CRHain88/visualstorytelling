@@ -8,9 +8,9 @@ $(function () {
         e.stopPropagation();
         e.preventDefault();
     });
-    $(document).click(function() {
+    $('.click-nav .js').on('focusout mouseleave', function() {
         if ($('.click-nav .js ul').is(':visible')) {
-            $('.click-nav .js ul', this).slideUp();
+            $('.click-nav .js ul', document).slideUp();
             $('.clicker').removeClass('active');
         }
     });
