@@ -48,7 +48,6 @@ h1.visual-header {
     font-size: 41px;
 }
 
-h2.visual-header,
 .visual-header--tiny {
     font-size: 20px;
 }
@@ -184,12 +183,25 @@ figcaption {
 }
 
 .booklist {
+    text-align: center;
+
     li {
         width: 140px;
+    }
+    h1 {
+        font-family: $vs-display-font;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        height: 75px
     }
     img {
         height: 190px;
         margin-bottom: 20px;
+    }
+    figcaption {
+        font-size: 12px;
     }
 }
 

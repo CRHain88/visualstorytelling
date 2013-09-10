@@ -93,7 +93,6 @@
 h1.visual-header {
   font-size: 41px; }
 
-h2.visual-header,
 .visual-header--tiny {
   font-size: 20px; }
 
@@ -201,11 +200,22 @@ figcaption blockquote cite {
   background-repeat: repeat-x;
   padding: 60px 0; }
 
-.booklist li {
-  width: 140px; }
-.booklist img {
-  height: 190px;
-  margin-bottom: 20px; }
+.booklist {
+  text-align: center; }
+  .booklist li {
+    width: 140px; }
+  .booklist h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    height: 75px; }
+  .booklist img {
+    height: 190px;
+    margin-bottom: 20px; }
+  .booklist figcaption {
+    font-size: 12px; }
 
 .footer__next-prev {
   font-family: "Roboto", sans-serif;
