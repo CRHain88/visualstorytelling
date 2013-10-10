@@ -29,6 +29,7 @@
 .visual-header {
     color: $vs-blue-1;
     font-family: $vs-display-font;
+    font-size: 30px;
     font-weight: 100;
     line-height: 1;
     text-align: center;
@@ -70,6 +71,7 @@ hgroup {
 }
 
 .pull-quote {
+    line-height: 2em;
     margin: 0 40px 20px;
     text-align: center;
 
@@ -81,6 +83,11 @@ hgroup {
             text-align: left;
         }
     }
+}
+
+body {
+    line-height: 1.5em;
+    font-size: 1em;
 }
 
 ul,
@@ -106,6 +113,7 @@ blockquote {
     }
 
     cite {
+        display: block;
         font-family: $vs-standard-font;
         font-size: 16px;
         font-style: normal;
@@ -141,6 +149,15 @@ figcaption {
     }
 }
 
+a {
+    text-decoration: none;
+    color: $vs-blue-1;
+    font-weight: 900;
+    &:hover {
+        color: $vs-yellow-1;
+    }
+}
+
 .visual-header--heavy {
     font-weight: 700;
 }
@@ -153,6 +170,7 @@ figcaption {
     font-style: italic;
     padding: 0 30px 30px;
     text-transform: none;
+    font-size: 20px;
 
     .theme-dark & {
         text-shadow: none;

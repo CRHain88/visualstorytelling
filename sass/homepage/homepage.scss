@@ -1,7 +1,13 @@
 @import "../global/global";
+@import "../global/global";
+@import "../global/global";
 
 .content-leading {
     overflow: hidden;
+    padding-top: 200px;
+    @media only screen and (min-width: 768px) {
+        padding-top: 0;
+    }
 
     &:after {
         background: url(../img/assets/slant.png) 0 0 no-repeat;
@@ -60,6 +66,14 @@
     }
 }
 
+.navigation__standard {
+    display: none;
+
+    @media only screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
 .navigation__chapter-list {
     color: $vs-blue-3;
 }
@@ -79,7 +93,14 @@
         bottom: inherit;
         height: 1083px;
         left: -300px;
-        top: -100px;
+        top: -90px;
         width: 1020px;
+    }
+}
+
+.navigation.navigation__peak-a-boo {
+    top: 0;
+    @media only screen and (min-width: 768px) {
+        top: -200px;
     }
 }

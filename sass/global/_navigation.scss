@@ -25,6 +25,7 @@
     .logo__container {
         display: inline-block;
         padding: 0;
+        float: left;
     }
 
     .logo {
@@ -43,6 +44,7 @@
 
     a {
         color: #fff;
+        font-weight: 400;
         line-height: 2.6;
         padding: 15px 30px;
         text-shadow: 0 3px 0 #00222c;
@@ -93,7 +95,7 @@
     background-color: $vs-blue-1;
     width: 100%;
     margin: 0 auto;
-    top: -100px;
+    top: -200px;
     text-align: center;
     z-index: 100;
     border-bottom: 5px solid $vs-blue-2;
@@ -125,9 +127,12 @@
 
     .logo__back-to-top {
         display: block;
-        text-align: left;
+        text-align: right;
         line-height: 1;
         margin: 15px 0 0;
+        @media only screen and (min-width: 768px) {
+            text-align: left;
+        }
         &:before {
             background: url('../img/assets/arrows.png') -20px -40px no-repeat;
             content: '';
@@ -144,19 +149,24 @@
     }
 }
 
-.click-nav {
-    margin: 15px auto 0;
-    width: 100%;
-    ul {
-        margin:  0;
-        padding:  0;
-        position: relative;
-        width:  100%;
-        .clicker {
-            background: $vs-blue-1;
+.section-container.accordion {
+    border: none;
+    > .section {
+        @media only screen and (max-width: 768px) {
+            max-height: 300px;
+            overflow: scroll;
+            padding-bottom: 0;
+        }
+        > .title {
+            border: none;
+            padding: 20px;
+            margin: 0;
+            background: $vs-blue-3;
             color: #fff;
-            position: relative;
-            width:  100%;
+            &:hover {
+                background-color: $vs-yellow-1;
+                color: $vs-blue-2;
+            }
             &:after {
                 background: url('../img/assets/arrows.png') 0 -40px no-repeat;
                 content: '';
@@ -170,6 +180,41 @@
             &:hover:after {
                 background-position: 0 0;
             }
+        }
+        &.active > .title {
+            background-color: $vs-yellow-1;
+            color: $vs-blue-2;
+            &:after {
+                background-position: 0 0;
+            }
+        }
+    }
+    .content {
+        @media only screen and (max-width: 768px) {
+            padding-bottom: 0;
+        }
+        @media only screen and (min-width: 768px) {
+            position: absolute;
+            width: 100%;
+        }
+    }
+    li, 
+    a {
+        text-shadow: none;
+        font-weight: 400;
+    }
+}
+
+.click-nav {
+    margin: 15px auto 0;
+    width: 100%;
+    ul {
+        margin:  0;
+        padding:  0;
+        position: relative;
+        width:  100%;
+        .clicker {
+            
         }
         .navigation__dropdown .clicker.active,
         .navigation__dropdown:hover .clicker {
@@ -191,10 +236,8 @@
     }
     ul li {
         cursor: pointer;
-        display:  inline-block;
         list-style: none;
         position: relative;
-        width:  50%;
         a {
             -webkit-transition: background-color 0.2s ease-in-out;
                -moz-transition: background-color 0.2s ease-in-out;
@@ -218,11 +261,4 @@
         right: 0;
         border: 1px solid $vs-blue-2;
     }
-}
-
-.click-nav .no-js ul {
-    display: none;
-}
-.click-nav .no-js:hover ul {
-    display: block;
 }
